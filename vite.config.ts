@@ -5,7 +5,7 @@ const base = process.env.NODE_ENV === 'production' && process.env.CI_PROJECT_NAM
     ? '/' + process.env.CI_PROJECT_NAME + '/'
     : '/';
 
-console.log(process.env.NODE_ENV, process.env.CI_PROJECT_NAME, base);
+console.log(process.env);
 
 export default defineConfig({
   base: base,
