@@ -1,13 +1,14 @@
-import { defineConfig, loadEnv } from 'vite'
+// import { defineConfig, loadEnv } from 'vite'
+import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const base = process.env.NODE_ENV === 'production' && process.env.CI_PROJECT_NAME 
-    ? '/' + process.env.CI_PROJECT_NAME + '/'
-    : '/';
+// const base = process.env.NODE_ENV === 'production' && process.env.CI_PROJECT_NAME 
+//     ? '/' + process.env.CI_PROJECT_NAME + '/'
+//     : '/';
 
-console.log(process.env);
+// console.log(process.env);
 
 export default defineConfig({
-  base: base,
+  base: '/hacker-news/',
   plugins: [react()],
 })
